@@ -12,7 +12,7 @@
 }
 
 body {
-	background: #180e3867;
+	background: linear-gradient(0deg, #870000, #190a05);
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -25,10 +25,7 @@ body {
 	justify-content: center;
 	align-items: center;
 	position: relative;
-	background-image: url(/img/bg_start.jpg);
-	background-size: 100%;
-	background-position: bottom;
-	box-shadow: 0 0 40px 9px #210036;
+	box-shadow: 0 0 40px 9px #360000;
 	margin: auto;
 	width: 1280px;
 	height: 720px;
@@ -65,7 +62,7 @@ body {
 	display: flex;
 	justify-content: space-between;
 	flex-direction: column;
-	background-image: url(/img/bg_start.jpg);
+	background: linear-gradient(0deg, #870000, #190a05);
 	width: 100%;
 	height: 100%;
 }
@@ -91,7 +88,7 @@ body {
 }
 
 .button {
-	color: #7f87fc;
+	color: #870000fc;
 	padding: 10px 20px;
 	width: 100%;
 	text-align: center;
@@ -155,7 +152,6 @@ body {
 	width: 110%;
 	height: 110%;
 	transition: all 0.1s ease;  
-	background-image: url("img/bg_start.jpg");
 	z-index: 1;
 }
 .mouse-parallax-fog-1 {
