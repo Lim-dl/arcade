@@ -155,11 +155,12 @@ body {
 	z-index: 1;
 }
 .mouse-parallax-fog-1 {
-	background-image: url("img/Starspng.png");    
+	background-image: url("img/Starspng2.png");
 	left: -10%;
 }
 .mouse-parallax-fog-2 {
-	background-image: url("img/Starspng2.png");    
+	
+	background-image: url("img/Starspng.png");
 }
 .pg-title__firstrow,
 .pg-title__secondrow,
