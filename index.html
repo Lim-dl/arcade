@@ -7,18 +7,18 @@
 	<meta name="viewport" content="width=1280, initial-scale=1.0">
 	<link rel="stylesheet" href="style.css">
 	<title>Flystrike - arcade game</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 </head>
 
 <body>
 	<div class="container">
-		<div class="pg-title">
-
+		<!-- Стартовый экран выбора -->
+		<div class="pg-title hide-block">
 			<div class="mouse-parallax">
 				<div class="mouse-parallax-bg"></div>
 				<div class="mouse-parallax-fog-1"></div>
 				<div class="mouse-parallax-fog-2"></div>
 			</div>
-			
 			<div class="pg-title__firstrow">
 				<a href="http://limbodl.tk" target="_blank" class="pg-title__link">My portfolio</a>
 			</div>
@@ -34,8 +34,25 @@
 				<div class=" button pg-title__buttons disabled">Score</div>
 			</div>
 		</div>
-		<div class="pg-game"></div>
-		<div class="pg-score"></div>
+		<!-- Игровое поле -->
+		<div class="pg-game ">
+			<div class="pg-game__playfield">
+				<div class="pg-game__track">
+					<div class="pg-game__health">HP:<span>100</span></div>
+					<div class="pg-game__time">0:00</div>
+					<div class="pg-game__score">0</div>
+				</div>
+				<div class="playfield__spasecraft" draggable="false">
+					<!-- <object type="image/svg+xml" data="img/spasecraft.svg"> -->
+						<img id="spasecraft" src="img/psd/Resource_6@3x.png" alt="Фолбэк">
+				<!-- 	 </object> -->
+				</div>
+
+			</div>
+
+		</div>
+		<!-- Итоговый результат, возможно совмещенный с игровым полем -->
+		<div class="pg-score hide-block"></div>
 	</div>
 	<script src="script.js"></script>
 </body>
